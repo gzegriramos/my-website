@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -11,44 +12,44 @@
    </header> 
    <section>
        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-        <div>
+        <div class="mb-3">
             <label for="myName">Name:</label>
-            <input type="text" name="myName" id="myName">
+            <input type="text" name="myName" id="myName" class="form-control">
         </div>
-        <div>
+        <div class="mb-3">
             <label for="myEmail">Email:</label>
-            <input type="text" name="myEmail" id="myEmail">
+            <input type="text" name="myEmail" id="myEmail" class="form-control">
         </div>
         Choose the browsers you use:<br>
-        <div>
-            <input type="checkbox" name="go" id="go" value="yes">
-            <label for="go">Google Chrome</label>
+        <div class="form-check">
+            <input type="checkbox" name="go" id="go" value="yes" class="form-check-input">
+            <label for="go" class="form-check-label">Google Chrome</label>
         </div>
-        <div>
-            <input type="checkbox" name="ff" id="ff" value="yes">
-            <label for="ff">Firefox</label>
+        <div class="form-check">
+            <input type="checkbox" name="ff" id="ff" value="yes" class="form-check-input">
+            <label for="ff" class="form-check-label">Firefox</label>
         </div>
-        <div>
-            <input type="checkbox" name="edge" id="edge" value="yes">
-            <label for="edge">Microsoft Edge</label>
+        <div class="form-check">
+            <input type="checkbox" name="edge" id="edge" value="yes" class="form-check-input">
+            <label for="edge" class="form-check-label">Microsoft Edge</label>
         </div>
         Would you like to be in our mailing list:<br>
-        <div>
+        <div class="form-check">
             <div>
-               <input type="radio" name="mailinglist" id="mailinglistyes" value="yes">
-               <label for="mailinglistyes">Yes</label>
+               <input type="radio" name="mailinglist" id="mailinglistyes" value="yes" class="form-check-input">
+               <label for="mailinglistyes" class="form-check-label">Yes</label>
             </div>
              <div>
-               <input type="radio" name="mailinglist" id="mailinglistno" value="yes">
-               <label for="mailinglistno">No</label>
+               <input type="radio" name="mailinglist" id="mailinglistno" value="yes" class="form-check-input">
+               <label for="mailinglistno" class="form-check-label">No</label>
             </div>
         </div>
-        <div>
+        <div class="mb-3">
             <span>Comments:</span>
-            <textarea></textarea>
+            <textarea class="form-control"></textarea>
         </div>
-        <input type="submit" value="Submit">
-        <input type="reset">
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <input type="reset" class="btn btn-secondary">
        </form>
    </section>
 </body>
